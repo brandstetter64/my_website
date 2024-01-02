@@ -1,0 +1,55 @@
+/* styles.css */
+
+/* Body styles */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #e6f7e6; /* Light green background */
+  color: #006400; /* Dark green text color */
+}
+
+/* Header styles */
+header {
+  background-color: #4CAF50; /* Green header background */
+  padding: 15px 0;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+/* Jumbotron styles */
+.jumbotron {
+  background-color: #2ecc71; /* Dark green jumbotron background */
+  color: #fff;
+  padding: 100px 0;
+}
+
+/* Main content styles */
+main {
+  padding: 20px 0;
+}
+
+.container h2 {
+  color: #006400; /* Dark green heading */
+}
+
+/* Footer styles */
+footer {
+  background-color: #4CAF50; /* Green footer background */
+  color: #fff;
+  padding: 10px 0;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #4CAF50; /* Green button background */
+  border-color: #4CAF50;
+}
+
+.btn-primary:hover {
+  background-color: #45a049; /* Darker green on hover */
+  border-color: #45a049;
+}
