@@ -3,45 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Awesome Website</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
   <style>
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    header {
-      background-color: #333;
-      padding: 10px;
-      color: #fff;
-      text-align: center;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 1000;
-    }
-
-    /* Add some padding to the content to prevent it from being hidden behind the header */
-    .content {
-      padding-top: 60px; /* Adjust this value based on the header's height */
+      padding: 20px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Lawn Stars LLC</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Awesome Website</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
-  <div class="content">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-    <!-- Add more content here -->
-  </div>
+  <main role="main">
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-4">Welcome to My Awesome Website!</h1>
+        <p class="lead">This is a simple and responsive website built using HTML, CSS, and Bootstrap.</p>
+      </div>
+    </div>
 
-  <script>
-    // You can add additional JavaScript logic here if needed
-  </script>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>About Us</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et velit sed dolor fermentum consequat vel nec justo.</p>
+        </div>
+        <div class="col-md-6">
+          <h2>Contact Us</h2>
+          <p>Email: info@awesome.com<br>Phone: 123-456-7890</p>
+        </div>
+      </div>
+    </div>
+  </main>
 
+  <footer class="text-muted text-center">
+    <div class="container">
+      <p>&copy; 2024 My Awesome Website</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-<h1>Hi welcome. here we are creating a website!</h1>
-
 </html>
+
