@@ -65,6 +65,19 @@ section.lawn-care {
   color: #555;
 }
 
+/* Popup styles */
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-title {
+  color: #2ecc71;
+}
+
+.modal-body {
+  text-align: center;
+}
+
 /* Footer styles */
 footer {
   background-color: #2ecc71; /* Green footer background */

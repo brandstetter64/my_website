@@ -9,6 +9,37 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+
+  <!-- Slick Carousel Theme CSS (optional, for default styling) -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+  <!-- Slick Carousel JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <!-- Your custom script -->
+  <script src="script.js"></script>
+
+  <!-- Custom modal script -->
+  <script>
+    $(document).ready(function () {
+      // Your custom function to initialize the widget
+      function deepLawnWidgetInit() {
+        // You may not need anything here since the widget code itself initializes
+      }
+
+      $('#exampleModal').on('shown.bs.modal', function () {
+        // This function is called when the modal is shown
+        // Initialize your widget here (if needed)
+        deepLawnWidgetInit();
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -47,10 +78,6 @@
       </div>
     </div>
 
-    <div class="lawn-widget"></div>
-  <script src="https://api.deeplawn.com/api/deeplawn-widget" data-app-url="https://app.deeplawn.com" name="deeplawn-widget-script" cid="634c2f3b078ee8d71496207c"></script>
-
-
     <div class="container">
       <h2>Lawn Care Done Right</h2>
 
@@ -75,23 +102,53 @@
       </div>
     </div>
 
-     <div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <h2><a href="page3.html">About Us</a></h2>
-      <p>Click here to learn more about us.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2><a href="page3.html">About Us</a></h2>
+          <p>Click here to learn more about us.</p>
+        </div>
+        <div class="col-md-6">
+          <h2>Contact Us</h2>
+          <p>Email: info@awesome.com<br>Phone: 123-456-7890</p>
+        </div>
+      </div>
     </div>
-    <div class="col-md-6">
-      <h2>Contact Us</h2>
-      <p>Email: info@awesome.com<br>Phone: 123-456-7890</p>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Launch Modal
+    </button>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel">Buy Lawn Care Online</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <!-- Your Deeplawn widget code goes here -->
+        <div class="lawn-widget"></div>
+        <script src="https://api.deeplawn.com/api/deeplawn-widget" data-app-url="https://app.deeplawn.com" name="deeplawn-widget-script" cid="634c2f3b078ee8d71496207c"></script>
+        <!-- Additional modal content goes here -->
+        <p>Your modal content goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- Add additional buttons or actions here -->
+      </div>
     </div>
   </div>
 </div>
-
-  <video width="1280" height="720" controls>
-    <source src="No title.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+    <video width="1280" height="720" controls>
+      <source src="No title.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </main>
 
   <footer class="text-muted text-center">
     <div class="container">
@@ -99,12 +156,9 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <!-- Bootstrap JS and Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-  <!-- Custom Scripts -->
-  <script src="script.js"></script>
 
 </body>
 
