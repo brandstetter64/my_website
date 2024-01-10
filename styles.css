@@ -5,51 +5,83 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Helvetica Neue', sans-serif;
-  background-color: #e6f7e6; /* Light green background */
-  color: #006400; /* Dark green text color */
+  background-color: #f5f5f5; /* Light gray background */
+  color: #333; /* Dark text color */
 }
 
 /* Header styles */
 header {
-  background-color: #4CAF50; /* Green header background */
+  background-color: #2ecc71; /* Green header background */
   padding: 15px 0;
 }
 
 .navbar-brand,
 .navbar-nav .nav-link {
-  color: #fff !important;
+  color: #fff;
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+  color: #fff;
 }
 
 /* Jumbotron styles */
 .jumbotron {
-  background-color: #2ecc71; /* Dark green jumbotron background */
+  background-color: #3498db; /* Blue jumbotron background */
   color: #fff;
   padding: 100px 0;
+  text-align: center; /* Center the text */
 }
 
 /* Main content styles */
 main {
   padding: 20px 0;
+  text-align: center; /* Center the content in the main section */
+}
+
+.container {
+  max-width: 800px; /* Limit the maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
 }
 
 .container h2 {
-  color: #006400; /* Dark green heading */
+  color: #2ecc71; /* Green heading */
+}
+
+/* Section styles - Lawn Care Done Right */
+section.lawn-care {
+  padding: 40px 0;
+  text-align: center; /* Center the content in the section */
+}
+
+.lawn-care img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.lawn-care p {
+  color: #555;
 }
 
 /* Footer styles */
 footer {
-  background-color: #4CAF50; /* Green footer background */
+  background-color: #2ecc71; /* Green footer background */
   color: #fff;
   padding: 10px 0;
+  text-align: center;
 }
 
 /* Button styles */
 .btn-primary {
-  background-color: #4CAF50; /* Green button background */
-  border-color: #4CAF50;
+  background-color: #2ecc71; /* Green button background */
+  border-color: #2ecc71;
+  color: #fff;
+  transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: #45a049; /* Darker green on hover */
-  border-color: #45a049;
+  background-color: #27ae60; /* Darker green on hover */
+  border-color: #27ae60;
 }

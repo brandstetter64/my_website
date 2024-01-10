@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Awesome Website</title>
+  <title>Lawn Stars LLC</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- Custom CSS -->
-  <style>
-    body {
-      padding: 20px;
-    }
-  </style>
-<link rel="stylesheet" href="styles.css">
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Awesome Website</a>
+      <a class="navbar-brand" href="#">Lawn Stars LLC</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a href="page2.html" class="nav-link">About</a>
-
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a href="page2.html" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a href="page3.html" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="page2.html" class="nav-link">Contact</a>
           </li>
         </ul>
       </div>
@@ -47,36 +43,69 @@
       <div class="container">
         <h1 class="display-4">We love lawn care!</h1>
         <img src="Rhododendron_catawbi_67qVuPWEzS2f.png" alt="my favorite bush" height="200">
-        <p class="lead"Welcome to Lawn Stars, your local lawn care company.</p>
+        <p class="lead">Welcome to Lawn Stars, your local lawn care company.</p>
       </div>
     </div>
 
+    <div class="lawn-widget"></div>
+  <script src="https://api.deeplawn.com/api/deeplawn-widget" data-app-url="https://app.deeplawn.com" name="deeplawn-widget-script" cid="634c2f3b078ee8d71496207c"></script>
+
+
     <div class="container">
+      <h2>Lawn Care Done Right</h2>
+
       <div class="row">
-        <div class="col-md-6">
-          <h2>About Us</h2>
+        <!-- Image 1 -->
+        <div class="col-md-4">
+          <img src="Rhododendron_catawbi_67qVuPWEzS2f.png" alt="Lawn Care Image 1" class="img-fluid">
+          <p>Paragraph about the first image and lawn care done right.</p>
         </div>
-        <div class="col-md-6">
-          <h2>Contact Us</h2>
-          <p>Email: info@awesome.com<br>Phone: 123-456-7890</p>
+
+        <!-- Image 2 -->
+        <div class="col-md-4">
+          <img src="Rhododendron_catawbi_67qVuPWEzS2f.png" alt="Lawn Care Image 2" class="img-fluid">
+          <p>Paragraph about the second image and lawn care done right.</p>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="col-md-4">
+          <img src="Rhododendron_catawbi_67qVuPWEzS2f.png" alt="Lawn Care Image 3" class="img-fluid">
+          <p>Paragraph about the third image and lawn care done right.</p>
         </div>
       </div>
     </div>
-  </main>
-<video width="1280" height="720" controls>
-  <source src="No title.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+     <div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h2><a href="page3.html">About Us</a></h2>
+      <p>Click here to learn more about us.</p>
+    </div>
+    <div class="col-md-6">
+      <h2>Contact Us</h2>
+      <p>Email: info@awesome.com<br>Phone: 123-456-7890</p>
+    </div>
+  </div>
+</div>
+
+  <video width="1280" height="720" controls>
+    <source src="No title.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
   <footer class="text-muted text-center">
     <div class="container">
       <p>&copy; 2024 My Awesome Website</p>
     </div>
   </footer>
 
-  <!-- Bootstrap JS and Popper.js -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
 
+  <!-- Custom Scripts -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
