@@ -55,4 +55,46 @@ $(document).ready(function () {
     prevArrow: '<button type="button" class="slick-prev">&#9665;</button>',
     nextArrow: '<button type="button" class="slick-next">&#9655;</button>',
   });
+  // script.js
+
+$(document).ready(function () {
+  // Add a smooth scroll effect to navigation links
+  $("a").on("click", function (event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top,
+        },
+        800,
+        function () {
+          window.location.hash = hash;
+        }
+      );
+    }
+  });
+
+  // Handle form submission
+  $("#contactForm").submit(function (event) {
+    event.preventDefault();
+
+    // Basic form validation - add more validation as needed
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var message = $("#message").val();
+
+    if (!name || !email || !message) {
+      alert("Please fill out all fields before submitting.");
+      return;
+    }
+
+    // You can handle form submission or AJAX request here
+    // For now, let's just show an alert
+    alert("Form submitted successfully!");
+  });
+});
+
 });

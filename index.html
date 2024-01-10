@@ -59,21 +59,50 @@
             <a href="page2.html" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="page3.html" class="nav-link">Services</a>
+            <a href="services.html" class="nav-link">Services</a>
           </li>
           <li class="nav-item">
-            <a href="page2.html" class="nav-link">Contact</a>
+            <a href="page3.html" class="nav-link">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
-  </header>
+  </header>'
+  <div class="container text-center">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Instant Quote
+  </button>
+</div>
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel">Buy Lawn Care Online</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <!-- Your Deeplawn widget code goes here -->
+        <div class="lawn-widget"></div>
+        <script src="https://api.deeplawn.com/api/deeplawn-widget" data-app-url="https://app.deeplawn.com" name="deeplawn-widget-script" cid="634c2f3b078ee8d71496207c"></script>
+        <!-- Additional modal content goes here -->
+        <p>Your modal content goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- Add additional buttons or actions here -->
+      </div>
+    </div>
+  </div>
+</div>
 
   <main role="main">
     <div class="jumbotron">
       <div class="container">
         <h1 class="display-4">We love lawn care!</h1>
-        <img src="Rhododendron_catawbi_67qVuPWEzS2f.png" alt="my favorite bush" height="200">
+        <img src="logo png.png" alt="" height="200">
         <p class="lead">Welcome to Lawn Stars, your local lawn care company.</p>
       </div>
     </div>
@@ -105,45 +134,16 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h2><a href="page3.html">About Us</a></h2>
+          <h2><a href="services.html">About Us</a></h2>
           <p>Click here to learn more about us.</p>
         </div>
         <div class="col-md-6">
-          <h2>Contact Us</h2>
-          <p>Email: info@awesome.com<br>Phone: 123-456-7890</p>
+          <a href="page3.html">Contact Us</a></h2>
+          <p>Email: rob@robslawnstars.com<br>Phone: 610-216-4576</p>
         </div>
       </div>
     </div>
 
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-      Launch Modal
-    </button>
-
-  <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title text-center" id="exampleModalLabel">Buy Lawn Care Online</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body text-center">
-        <!-- Your Deeplawn widget code goes here -->
-        <div class="lawn-widget"></div>
-        <script src="https://api.deeplawn.com/api/deeplawn-widget" data-app-url="https://app.deeplawn.com" name="deeplawn-widget-script" cid="634c2f3b078ee8d71496207c"></script>
-        <!-- Additional modal content goes here -->
-        <p>Your modal content goes here.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <!-- Add additional buttons or actions here -->
-      </div>
-    </div>
-  </div>
-</div>
     <video width="1280" height="720" controls>
       <source src="No title.mp4" type="video/mp4">
       Your browser does not support the video tag.
@@ -161,5 +161,19 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+
+  <!-- Slick Carousel Theme CSS (optional, for default styling) -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+  <!-- Your custom styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Your custom scripts -->
+  <script src="script.js"></script>
 
 </html>
